@@ -1,0 +1,578 @@
+/*
+Theme Name: GoldenGate
+Description: GoldenGate is a <a href="http://wpthemecity.com/themes/goldengate/">simple three column WordPress Theme</a> by Sadish
+Version: 1.0
+Author: Sadish Bala
+Author URI: http://wprocks.com/
+Tags: white, fixed width, two columns, widgets
+*/
+
+body {
+	margin: 0;
+	padding:0;
+	background: #e2960c;
+	font-family: Verdana,Tahoma, Arial, Serif;	
+	line-height: 1.5em;
+	font-size: small;
+  	font-size: 0.78em;
+	color: #444;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0.5em 0 0;
+	font-family:  Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	color: #042a42;
+    line-height: 1.2em;
+}
+
+h1 {font-size:2em}
+h2 {font-size:1.7em}
+h3 {font-size:1.5em}
+h4 {font-size:1.4em}
+h5 {font-size:1.3em}
+h6 {font-size:1.2em}
+p, ul, ol {
+	margin-top: 0;
+	line-height: 1.5em;
+}
+
+ul, ol {
+}
+
+hr {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px dotted #c98b4e;
+	color: #245474;
+}
+
+a:hover {
+	background: none;
+	border-bottom: 1px solid #c98b4e;
+}
+a img, img.noborder, img.wp-smiley
+{
+	border:0;
+}
+blockquote
+{
+	margin:0 1em;
+	padding:0 1.5em;
+	font-style:italic;
+	background:url(images/quote.gif) no-repeat left top;
+}
+pre, code
+{
+	display:block;
+	margin:1em;
+	padding:1em;
+	font-family:"Courier New", Arial, Verdana, Serif;
+	font-size:1em;
+}
+abbr, acronym
+{
+	cursor:help;
+}
+hr
+{
+	clear:both;
+	margin-top:5px;
+	color:#eee;
+}
+table
+{
+	width:100%;
+	border:#eee 1px solid;
+	padding:5px;
+}
+th
+{
+	text-align:left;
+	background:#e6e0e0;
+	padding:10px;
+}
+tr.even
+{
+	background:#f6f0f0;
+}
+td, th
+{
+    padding:10px;
+}
+.clear
+{
+	clear:both;	
+}
+/* Form */
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+legend {
+	display: none;
+}
+
+dl {
+	margin:1em 0px;
+}
+dt 
+{
+	font-weight:bold;
+}
+dd 
+{
+	margin:0.5em 1em;
+	padding:0;
+}
+#wrapper 
+{
+    clear:both;
+	width: 1000px;
+	margin: 5px auto;
+	padding: 0;
+	overflow:hidden;
+	background:#fff url(images/bg02.png) repeat-y right;
+	border:#6d0a0a 2px solid;
+		/* optional rounded corners for browsers that support it */
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+ Page Menu 
+
+#pgmenu 
+{
+    width: 980px;
+	margin: 0 auto;
+	padding: 0;
+
+}
+
+#pgmenu ul 
+{
+
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+	overflow:hidden;
+	background:#cde;
+
+	
+}
+
+#pgmenu li {
+	float: left;
+}
+
+#pgmenu a {
+	display: block;
+	padding: 7px 20px 8px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #446;
+	border: none;
+}
+
+#pgmenu a:hover, #pgmenu .current_page_item a 
+{
+    background:#446;
+	color: #fff;
+}
+    
+   
+/* Header */
+
+#header 
+{
+	padding:1px;
+	height: auto;
+	margin: 0 auto;
+	/* background:  url(images/header.jpg) no-repeat center; */
+	border-bottom:0;
+    width:1000px;
+}
+#feed
+{
+    float:right;
+    text-align:center;
+    padding:5px 0;
+    margin-right:1em;
+}
+#feed a { color:#fff;}
+/* Logo */
+#logo
+{
+    margin:0;
+    padding:0;
+    background:#6f0b0b;
+    border:#a31c1c 1px solid;
+    overflow:hidden;
+    border-top:#6d0a0a 1px solid;
+	border-bottom:#6d0a0a 1px solid;
+
+}
+#logo  div
+{
+    width:980px;
+    margin:0 auto;
+    padding:0px 0;
+}
+#logo a {
+	border: none;
+	text-decoration: none;
+}
+#logo h1 { font-size:2em;}
+#logo * { color:#f9bf02;}
+#logo p { font-style:italic;}
+
+#search_a
+{
+    display:block;
+    float:right;
+    margin:7px 0 0 auto;
+    padding:0;
+    /*background:#6f0b0b;
+    color: #6d0a0a;*/
+    overflow: hidden;
+}
+#social
+{
+    display:inline;
+    float:right;
+    margin:5px 0 0 0;
+    padding:0;
+}
+#social a  
+{
+    border:0;
+    display:block;
+    float:left; 
+    margin:0 5px;
+    padding:0;
+    
+}
+
+/* Menu */
+
+#menu 
+{
+	margin: 0 auto;
+	padding: 0;
+	background:#6d0a0a;
+	overflow:hidden;
+}
+
+#menu ul 
+{
+    width:1000px;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+}
+
+#menu a {
+	display: block;
+	padding: 11px 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #e2960c;
+	border: none;
+}
+
+#menu a:hover, #menu .current-cat a 
+{
+    background:#e2960c;
+	color: #6d0a0a;
+}
+/* Page */
+
+#page {
+	width: 980px;
+	margin: 0 auto;
+	padding:0;
+	overflow:hidden;
+	border:#fff 1px solid;
+	background:#fff;
+}
+
+/* Content */
+
+#content {
+	float: left;
+	width: 592px;
+	padding: 10px 20px;
+	margin:0;
+}
+
+.post 
+{
+    margin-bottom:3em;
+}
+
+.post .title {
+	color: #000000;
+}
+
+.post .title a {
+	background: none;
+	color: #000000;
+	border: none;
+}
+
+.post .title a:hover {
+	text-decoration: underline;
+}
+
+.post .meta {
+	font-size:0.95em;
+	margin:0;
+	padding:5px 0;
+	color:#999;
+	font-family:Calibri, Verdana, Arial, Serif;
+}
+.post .meta a  
+{
+    font-variant:small-caps;
+    font-size:1.2em;
+}
+.post .comments
+{
+    text-align:right;
+    font-family:Calibri, Verdana, Arial, Serif;
+    margin:0;
+    padding:0;
+    color:#999;
+}
+.post .comments a
+{
+    font-weight:bold;
+    font-size:1.3em;
+}
+.post .entry 
+{
+    border-top:#eee 3px double;
+	padding: 10px 0;
+    border-bottom:#eee 3px double;
+}
+.post .avatar
+{
+    float:right;
+	margin:0 0 1em 1em;
+}
+/* Sidebar */
+
+#sidebar {
+	float: right;
+	width: 330px;
+	padding: 10px;
+}
+#sidebar ul
+{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+#sidebar ul li
+{
+    list-style:none;
+}
+#sidebar h2,
+#sidebar h3
+{
+    text-transform:uppercase;
+    font-size:1.2em;
+    border-bottom:#ccc 1px dotted;
+    padding:0 0 5px 0;
+    margin:1em 0 0;
+}
+#sidebar li ul,
+#sidebar li div,
+#sidebar li .textwidget 
+{ 
+    margin:5px 20px;
+}
+#sidebarleft
+{
+	width:160px;
+	padding:10px 0;
+	float:left;
+}
+#sidebarright
+{
+	width:160px;
+	padding:10px 0;
+	float:right;
+}
+#sidebar .adspot a
+{
+    border:none;
+}
+#sidebar .adspot img
+{
+    margin:0px;
+}
+/* Calendar */
+
+#calendar {
+}
+
+#calendar_wrap {
+	padding: 20px;
+}
+
+#calendar table {
+	width: 100%;
+}
+
+#calendar tbody td {
+	text-align: center;
+}
+
+#calendar #next {
+	text-align: right;
+}
+
+/* Footer */
+
+#footer {
+	width: 980px;
+	height: 50px;
+	margin: 0 auto;
+	padding: 10px 0;
+	color: #545454;
+	font-family:"Calibri", Verdana, Arial, Serif;
+}
+
+#footer p {
+	margin: 0;
+	text-align: center;
+}
+
+#footer a {
+	color: #333;
+}
+
+#commentform {
+}
+
+#comment {
+	width: 90%;
+}
+.commentlist  
+{
+    clear:both;
+    margin:20px 0;
+    padding:0;
+    list-style:none;
+}
+.commentlist li  
+{
+    margin:0;
+    padding:10px;
+    background:#f0f0f0;
+    border-top:#eee 1px solid;
+    overflow:hidden;
+}
+.commentlist .avatar 
+{
+    float:right;
+}
+.commentlist .alt 
+{
+    background:#f9f9f9;
+}
+.commentlist li cite
+{
+    font-style:normal;
+}
+.commentlist li .commentmetadata
+{
+    display:block;
+    font-size:0.9em;
+}
+.commentlist li .commentext
+{
+    padding:10px 0;
+}
+#respond {
+	margin: 0;
+	padding-top: 50px;
+}
+
+.navigation {
+	padding-top: 20px;
+}
+textarea {
+	width:80%;
+}
+input[type="text"] { width:240px;}
+input[type="text"], textarea, select
+{
+    font:1em verdana, arial, serif;
+    border:#ccd 1px solid;
+    background:#fff;   
+    padding:3px;
+}
+.pagetitle {
+	padding-bottom: 20px;
+}
+img.left, img.alignleft, div.alignleft
+{
+	float:left;
+	margin:0 1em 1em 0;
+}
+img.right, img.alignright, div.alignright
+{
+	float:right;
+	margin:0 0 1em 1em;
+}
+img.aligncenter, div.aligncenter
+{
+	text-align:center;
+	margin:0 auto;
+}
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	/* optional rounded corners for browsers that support it */
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
